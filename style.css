@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#task-manager {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-buttons button {
+    margin-left: 0.5rem;
+    background: #ddd;
+    color: #333;
+}
+
+.task-buttons button:hover {
+    background: #ccc;
+}
